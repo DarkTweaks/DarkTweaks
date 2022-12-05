@@ -1,0 +1,35 @@
+@echo off
+color 03
+title FORTNITE DARK TWEAKS
+
+:return 
+cls
+echo WELCOME TO DARK TWEAKS FORTNITE
+echo 
+*****************************************************
+echo;
+echo [1] DARK TWEAKS FORTNITE
+echo [2] REVERT Changes
+
+SET choice=
+SET /p choice=What do You want to do ? ( Pick a number )
+IF NOT '%choice%' ==' ' SET choice
+
+
+SET choice=
+
+15 SET /p choice=What do you want to
+
+do? (pick a number):
+
+IF NOT '%choice%'==' SET וו.choice=%choice: ~0,1%
+ IF '%choice%'=='1' GOTO apply
+IF '%choice%'=='2' GOTO revert 
+IF '%choice%'==' GOTO return
+
+:apply
+rename "%localappdata%\FortniteGame\Saved\Config\WindowClient\GameUserSettings.ini"
+GameUserSettings. ini.old
+
+move "%localappdata%
+\FortniteGame\Saved\Config\WindowsC lient\GameUserSettings.ini.old" "localappdata%
